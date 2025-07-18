@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Админка</title></head>
+<body>
+  <script>
+    const password = prompt("Введите пароль администратора:");
+    if (password !== "admin123") {
+      document.write("Доступ запрещён!");
+    } else {
+      document.write("<h2>Панель администратора</h2>");
+      document.write("<button onclick='rebootVM()'>🔁 Перезагрузить VM</button>");
+    }
+
+    function rebootVM() {
+      alert("VM перезагружается...");
+      location.reload();
+    }
+  </script>
+</body>
+</html>
